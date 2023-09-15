@@ -1,0 +1,80 @@
+.SolutionSection {
+    background-image: url(../../../Assets/Images/solutionbg_img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15rem 0;
+    color: #fff;
+
+    .Solution_list {
+        margin: 3.6rem 0;
+
+        ul {
+            li {
+                font-size: 1.6rem;
+                font-weight: 500;
+
+                &:not(:last-child) {
+                    margin-bottom: 2rrem;
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 1.8rem;
+            margin-top: 0;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+    }
+}
+
+
+/***Media Query***/
+
+@media screen and (max-width: 991px) {
+
+    .SolutionSection {
+        padding: 6rem 0;
+
+        .Solution_list {
+            margin: 2rem 0;
+
+            p {
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+            }
+
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .SolutionSection {
+        padding: 4rem 0;
+
+        .Solution_list {
+            margin: 1.5rem 0;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            ul {
+                li {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+    }
+}

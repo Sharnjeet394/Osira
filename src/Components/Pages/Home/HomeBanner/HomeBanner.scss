@@ -1,0 +1,43 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.homeBanner {
+    display: block;
+
+    .video-react {
+        height: calc(100vh - 124px);
+        padding-top: 42% !important;
+
+        @media (max-width:767px) {
+            height: 300px;
+        }
+
+        &-video {
+            // height: calc(100vh - 124px);
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        &-big-play-button {
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            height: 48px;
+            width: 48px;
+            border: 1px solid $greenbg;
+            border-radius: 100px;
+        }
+
+        &:hover {
+
+            .video-react-big-play-button,
+            .video-react-big-play-button:focus {
+                outline: 0;
+                border-color: $greenbg;
+                background-color: $footerbg;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+@import "../../../Assets/theme/_var.scss";
+
+.siteFooter {
+    background-color: $footerbg;
+
+    .innerFooter {
+        padding: 5rem 0;
+    }
+
+    .footerContent {
+        p {
+            color: $white;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 1.8rem;
+            max-width: 630px;
+            width: 100%;
+
+            @media (max-width:991px) {
+                max-width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    h4 {
+        color: $white;
+        opacity: 0.8;
+        margin-bottom: 1.1rem;
+    }
+
+    .footerLink {
+        ul {
+            max-width: 45%;
+            width: 100%;
+
+            li {
+                a {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    line-height: 3.2rem;
+                    color: $white;
+                    opacity: 0.8;
+                    transition: all ease-in-out 0.3s;
+                    padding-bottom: 0.5rem;
+
+                    &:hover {
+                        color: $greenbg;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .footersocialLink {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            opacity: 0.5;
+            background-color: $greyBg;
+            box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.56) inset;
+            width: 40px;
+            height: 40px;
+            margin-right: 1.2rem;
+            transition: all ease-in-out 0.3s;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                background-color: $greenbg;
+                opacity: 1;
+            }
+        }
+    }
+
+    .copyrightFooter {
+        border-top: 1px solid rgba(99, 103, 112, 0.3);
+        padding: 1.8rem 0;
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}

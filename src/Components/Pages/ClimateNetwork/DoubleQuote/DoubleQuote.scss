@@ -1,0 +1,166 @@
+@import "../../../../Assets/theme/_var.scss";
+
+.Double_quote {
+    //background: radial-gradient(65% 56% at 50% 120%, #6BC6AF -200%, #1B3741 90%);
+    background: $basecolor;
+    padding: 100px 89px 100px 65px;
+    width: 100%;
+    max-width: 990px;
+    border-radius: 30px;
+    margin: 0 auto;
+    color: $white;
+    background-image: url(../../../../Assets/Images/doublequote_left.png),
+        url(../../../../Assets/Images/doublequote_right.png);
+    background-repeat: no-repeat;
+    background-position: top left 2.4rem, bottom right 3.8rem;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 1449px;
+        opacity: 0.5;
+        background: radial-gradient(50% 50% at 50% 50%,
+                #6bc6af 0%,
+                rgba(18, 42, 51, 0) 100%);
+        left: 0;
+        bottom: -77%;
+        height: 100%;
+        width: 100%;
+    }
+
+    h5 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 3.8rem;
+        margin: 4.2rem 0 7.8rem;
+    }
+
+    h6 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        margin: 0;
+        margin-top: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Double_quote {
+        padding: 10rem 4rem 10rem 5rem;
+
+        h5 {
+            font-size: 2rem;
+            line-height: 3.5rem;
+            margin: 2.2rem 0 4rem;
+        }
+
+        h6 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin-top: 0.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .Double_quote {
+        margin-top: 4rem;
+
+        h5 {
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            margin: 2rem 0 3rem;
+        }
+
+        h6 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-top: 0.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .Double_quote {
+        padding: 10rem 3rem 10rem 3rem;
+
+        h5 {
+            font-size: 1.6rem;
+            line-height: 3rem;
+            margin: 2rem 0 2.8rem;
+        }
+
+        h6 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin-top: 0.4rem;
+        }
+    }
+}
+
+.web3_sec {
+    margin-top: 10rem;
+    background: $gradient4;
+    border-radius: 1.2rem;
+    padding: 5.5rem 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        margin-top: 5rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border-radius: 1449px;
+        opacity: 0.5;
+        background: radial-gradient(50% 50% at 50% 50%,
+                #6bc6af 0%,
+                rgba(18, 42, 51, 0) 100%);
+        left: 0;
+        bottom: -76.5%;
+        height: 100%;
+        width: 100%;
+    }
+
+    h2 {
+        margin-bottom: 5.4rem;
+
+        @media (max-width: 767px) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    p {
+        font-size: 1.6rem !important;
+        width: 100%;
+        max-width: 1143px;
+        margin: 0 auto;
+
+        @media (max-width: 767px) {
+            font-size: 1.2rem !important;
+        }
+    }
+}

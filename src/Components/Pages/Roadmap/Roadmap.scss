@@ -1,0 +1,155 @@
+@import "../../../Assets/theme/_var.scss";
+
+.roadmap_sec {
+  background-color: $basecolor2;
+  // background-image: url('../../../Assets/Images/roadmap_bg.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  padding: 9.8rem 0;
+  @media (max-width: 991px) {
+    padding: 5rem 0;
+  }
+  .roadmap_slider {
+    .roadmap_area {
+      position: relative;
+      margin-top: 5.5rem;
+
+      &::before {
+        content: "";
+        height: 10.8rem;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 13.8rem;
+        background-image: url(../../../Assets/Images/line.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      .slick-track {
+        margin-top: 6rem;
+        @media (max-width:575px) {
+          transform: unset !important;
+        }
+        > div {
+          &:nth-child(odd) {
+            .roadmap_box {
+              width: 376px !important;
+              .roadmap_box_title {
+                p {
+                  width: 100%;
+                  max-width: 376px;
+                  text-align: center;
+                }
+              }
+              .roadmap_box_phase {
+                position: relative;
+                border: 5px solid $greenbg;
+                border-radius: 1rem;
+                max-width: 16rem;
+                width: 100%;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 7.8rem auto 0;                
+
+                &:before {
+                  height: 5.3rem;
+                  content: "";
+                  width: 100%;
+                  top: -5.8rem;
+                  position: absolute;
+                  left: 0;
+                  background-image: url(../../../Assets/Images/line-green.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                }
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -13px;
+                  border-bottom: 8px solid $greenbg;
+                  border-left: 6px solid transparent;
+                  border-right: 6px solid transparent;
+                }
+
+                &.yellowBorder {
+                  border-color: $yellow;
+
+                  &:before {
+                    background-image: url(../../../Assets/Images/line-yellow.svg);
+                  }
+
+                  &::after {
+                    border-bottom: 8px solid $yellow;
+                  }
+                }
+              }
+            }
+          }
+
+          &:nth-child(even) {
+            .roadmap_box {
+              width: 376px !important;
+              .roadmap_box_title {
+                margin-top: 11.3rem;
+                p {
+                  width: 100%;
+                  max-width: 376px;
+                  text-align: center;
+                }
+              }
+              .roadmap_box_phase {
+                position: relative;
+                border: 5px solid $basecolor;
+                border-radius: 1rem;
+                max-width: 16rem;
+                width: 100%;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: -4.3rem auto 0;
+
+                &:before {
+                  height: 5.3rem;
+                  content: "";
+                  width: 100%;
+                  bottom: -5.5rem;
+                  position: absolute;
+                  left: 0;
+                  background-image: url(../../../Assets/Images/line-green.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                  transform: rotate(180deg);
+                  z-index: -1;
+                }
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: -13px;
+                  border-top: 8px solid $basecolor;
+                  border-left: 6px solid transparent;
+                  border-right: 6px solid transparent;
+                  z-index: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-slider{
+  text-align: center;
+}

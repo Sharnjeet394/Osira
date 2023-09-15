@@ -1,0 +1,99 @@
+@import "../../../Assets/theme/_var.scss";
+
+.howwork_sec {
+  background-color: $basecolor;
+  padding: 5.5rem 0;
+  &_inner {
+    &_box {
+      margin-top: 10rem;
+      .row {
+        @media (max-width: 991px) {
+          justify-content: center;
+        }
+        > div {
+          @media (max-width: 991px) {
+            margin-bottom: 7.5rem;
+          }
+        }
+      }
+      &_card {
+        border-radius: 1.2rem;
+        background: $gradient;
+        padding: 7.9rem 2.5rem 3rem;
+        text-align: center;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        // overflow: hidden;
+
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   border-radius: 1449px;
+        //   opacity: 0.5;
+        //   background: radial-gradient(
+        //     50% 50% at 50% 50%,
+        //     #6bc6af 0%,
+        //     rgba(18, 42, 51, 0) 100%
+        //   );
+        //   left: 0;
+        //   bottom: -76.5%;
+        //   height: 100%;
+        //   width: 100%;
+        // }
+
+        @media (max-width: 991px) {
+          padding: 3.9rem 2.5rem 3rem;
+        }
+        img {
+          margin-top: -19rem;
+          @media (max-width: 991px) {
+            margin-top: -11rem;
+          }
+        }
+        h5 {
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 2.6rem;
+          color: $white;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 2.6rem;
+          color: $white;
+          margin-top: 2.6rem;
+          @media (max-width: 575px) {
+            margin-top: 1.5rem;
+          }
+        }
+      }
+      .card2 {
+        margin: 7.6rem auto 0;
+        width: 100%;
+        max-width: 1171px;
+        @media (max-width: 991px) {
+          margin-top: 0;
+        }
+        p {
+          margin: 2.6rem auto 0;
+          width: 100%;
+          max-width: 1200px;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 2.6rem;
+          color: $white;
+          margin-top: 2.6rem;
+          @media (max-width: 575px) {
+            margin-top: 1.5rem;
+          }
+        }
+      }
+      .card2 {
+        margin-top: 7.6rem;
+      }
+    }
+  }
+}

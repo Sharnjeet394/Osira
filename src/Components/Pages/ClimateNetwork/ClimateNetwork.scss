@@ -1,0 +1,21 @@
+.ClimateNetwork {
+    background: #122A33;
+    padding: 9rem 0;
+}
+
+
+/***Media Query***/
+
+@media screen and (max-width: 991px) {
+    
+    .ClimateNetwork {
+        padding: 7rem 0;
+    } 
+}
+
+@media screen and (max-width: 575px){
+
+    .ClimateNetwork {
+        padding: 4rem 0;
+    } 
+}
