@@ -8,37 +8,84 @@
 
 .banner_sec {
   background-color: $basecolor2;
-  padding: 7.3rem 6rem;
+  padding: 7.3rem 0;
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    background-image: url("../../../Assets/Images/green-shadow.png");
-    right: 6%;
-    top: -122px;
-    height: 763px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 763px;
-    z-index: 1;
+
+  @media (max-width: 991px) {
+    padding: 5rem 0;
   }
+
   .banner_inner {
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+
     .row {
-      > div {
+      >div {
         &:nth-child(2) {
           justify-content: flex-end;
           display: flex;
+
+          @media (max-width: 991px) {
+            justify-content: center;
+          }
         }
       }
     }
+
     h2 {
       color: $white;
     }
+
     p {
       font-size: 1.6rem;
       font-weight: 600;
       color: $white;
       margin-top: 5.5rem;
+
+      @media (max-width: 1439px) {
+        margin-top: 4rem;
+      }
+
+      @media (max-width: 1199px) {
+        margin-top: 2.5rem;
+      }
+    }
+
+    img {
+      @media (max-width: 991px) {
+        margin-top: 3rem;
+      }
+    }
+
+    .osira_img {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../../../Assets/Images/green-shadow.png");
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        height: 763px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 100%;
+        width: 763px;
+        z-index: -1;
+
+        @media (max-width: 1199px) {
+          height: 40rem;
+        }
+      }
+    }
+
+    @media (max-width: 1199px) {
+      .osira_img {
+        margin-top: 4rem;
+      }
     }
   }
 }
@@ -47,18 +94,49 @@
 
 .team_sec {
   padding: 6rem 0;
+
+  @media (max-width: 767px) {
+    padding: 2rem 0 0;
+  }
+
   .team_inner {
     justify-self: center;
     margin-top: 5rem;
   }
+
   .team_box {
     padding: 7.2rem 2rem 2rem;
-    background: $graident3;
+    // background: $graident3;
+    background: linear-gradient(180deg, #122A33 -33.67%, #1B3741 46.27%, rgba(107, 198, 175, 0.00) 314.04%);
     border-radius: 1.2rem;
     text-align: center;
     width: 100%;
     max-width: 697px;
     margin-left: auto;
+    position: relative;
+
+    @media (max-width: 767px) {
+      padding: 4rem 2rem 2rem;
+    }
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   background-image: url("../../../Assets/Images/green-shadow.png");
+    //   right: 50%;
+    //   transform: translateX(-50%);
+    //   bottom: 0;
+    //   height: 763px;
+    //   background-repeat: no-repeat;
+    //   background-size: contain;
+    //   width: 763px;
+    //   z-index: 1;
+    // }
+
+    @media (max-width: 767px) {
+      margin-bottom: 4rem;
+    }
+
     h6 {
       color: $greenbg;
       margin-top: 4.6rem;
@@ -66,12 +144,14 @@
       font-size: 2rem;
       font-weight: 700;
     }
+
     p {
       color: $white;
       font-size: 1.4rem;
       font-weight: 600;
     }
   }
+
   .team_box2 {
     margin-right: auto;
     margin-left: unset;
@@ -82,25 +162,56 @@
 .technology_sec {
   padding-top: 5rem;
   padding-bottom: 13rem;
+
+  @media (max-width: 767px) {
+    padding: 2rem 0 5rem;
+  }
+
   .techno_box {
     background: linear-gradient(180deg, #1b3741 -6.06%, #173742 90.56%);
     border-radius: 2rem;
     padding: 2rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 1449px;
+      opacity: 0.3;
+      background: radial-gradient(50% 50% at 50% 50%,
+          #6bc6af 0%,
+          rgba(18, 42, 51, 0) 100%);
+      left: 0;
+      bottom: -77.5%;
+      height: 100%;
+      width: 100%;
+    }
+
     .technology_img {
       text-align: center;
     }
+
     .row {
       display: flex;
       align-items: center;
     }
+
     .technology_content {
+      @media (max-width: 991px) {
+        margin-top: 3rem;
+        text-align: center;
+      }
+
       p {
         color: $white;
         margin-top: 3.2rem;
         width: 100%;
         max-width: 750px;
         margin-right: auto;
-        a{
+
+        a {
           color: $greenbg;
         }
       }

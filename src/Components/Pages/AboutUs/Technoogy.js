@@ -5,16 +5,18 @@ import technology from '../../../Assets/Images/technology-img.png'
 import { Link } from 'react-router-dom'
 
 const Technoogy = () => {
+  
+
     return (
-        <div className='technology_sec'>
+        <div className='technology_sec' data-aos="fade-down">
             <div className='techno_box'>
                 <Row>
-                    <Col xl={6}>
+                    <Col lg={6} xl={6}>
                         <div className='technology_img'>
                             <img src={technology} alt="tech" />
                         </div>
                     </Col>
-                    <Col xl={6}>
+                    <Col lg={6} xl={6}>
                         <div className='technology_content'>
                             <h2>Osira’s technology partners</h2>
                             <p>Osira is now ready to proceed with the platform’s implementation, having completed an extensive discovery and business

@@ -2,7 +2,7 @@ import React from 'react'
 import "./Footer.scss"
 import { Col, Container, Row } from 'react-bootstrap'
 import footerlogo from "../../../Assets/Images/logo.svg"
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { DiscordIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from '../../../Assets/svgs/svg'
 
 const Footer = () => {
@@ -26,12 +26,12 @@ const Footer = () => {
                   <h4>Quick links</h4>
                   <div className='d-flex flex-wrap'>
                     <ul>
-                      <li><Link to="#">Home</Link></li>
-                      <li><Link to="#">About us</Link></li>
+                      <li><NavLink to="/">Home</NavLink></li>
+                      <li><NavLink to="/about-us">About us</NavLink></li>
                       <li><Link to="#">Security</Link></li>
                     </ul>
                     <ul>
-                      <li><Link to="#">Privacy policy</Link></li>
+                      <li><Link to="https://osira.network/privacy-policy/" target="_blank" rel="noreferrer">Privacy policy</Link></li>
                       <li><Link to="#">Cookie policy</Link></li>
                     </ul>
                   </div>
@@ -52,7 +52,7 @@ const Footer = () => {
           </Container>
         </div>
         <div className='text-center copyrightFooter'>
-            <p>@ 2023 Osira Network Limited. All rights reserved.</p>
+          <p>@ 2023 Osira Network Limited. All rights reserved.</p>
         </div>
       </div>
     </>

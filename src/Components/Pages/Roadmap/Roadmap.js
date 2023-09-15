@@ -11,7 +11,7 @@ const Roadmap = () => {
     const settings = {
         dots: false,
         arrows: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -21,26 +21,12 @@ const Roadmap = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    infinite: true,
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
-                }
-            },
-            {
-                breakpoint: 575,
-                settings: {
                     slidesToShow: 1,
-                }
-            },
-            {
-                breakpoint: 479,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
                 }
             }
         ]
@@ -52,40 +38,33 @@ const Roadmap = () => {
                 <div className='roadmap_slider'>
                     <div className='roadmap_area'>
                         <Slider {...settings}>
-                            <div className='roadmap_box'>
+                            <div className='roadmap_box ito'>
                                 <div className="roadmap_box_title">
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
                                         It has roots in a piece of classical Latin literature from 45 BC,
                                         making it over 2000 years old. Richard McClintock,
                                     </p>
                                 </div>
-                                <div className='roadmap_box_phase'>
-
-                                    <img src={MvpIcon} alt="icon" />
-                                    <p>Phase 1 </p>
-                                    <h6>
-                                        ITO Launch
-                                    </h6>
-
-                                </div>
-                            </div>
-                            <div className='roadmap_box'>
-
                                 <div className='roadmap_box_phase'>
                                     <img src={icon} alt="icon" />
-                                    <p>Phase 1 </p>
-                                    <h6>
-                                        ITO Launch
-                                    </h6>
+                                    <h6>Phase 1 </h6>
+                                    <p>ITO Launch</p>
                                 </div>
+                            </div>
+                            <div className='roadmap_box mvp'>
                                 <div className="roadmap_box_title">
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
                                         It has roots in a piece of classical Latin literature from 45 BC,
                                         making it over 2000 years old. Richard McClintock,
                                     </p>
                                 </div>
+                                <div className='roadmap_box_phase'>
+                                    <img src={MvpIcon} alt="icon" />
+                                    <h6>Phase 2</h6>
+                                    <p>MVP Launch</p>
+                                </div>
                             </div>
-                            <div className='roadmap_box'>
+                            <div className='roadmap_box web'>
                                 <div className="roadmap_box_title">
                                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
                                         It has roots in a piece of classical Latin literature from 45 BC,
@@ -94,10 +73,8 @@ const Roadmap = () => {
                                 </div>
                                 <div className='roadmap_box_phase yellowBorder'>
                                     <img src={WebIcon} alt="icon" />
-                                    <p>Phase 1 </p>
-                                    <h6>
-                                        ITO Launch
-                                    </h6>
+                                    <h6>Phase 3</h6>
+                                    <p>Web3 Climate Investment</p>
                                 </div>
                             </div>
                         </Slider>

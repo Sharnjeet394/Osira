@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'aos/dist/aos.css';
 import 'video-react/dist/video-react.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "slick-carousel/slick/slick.css";

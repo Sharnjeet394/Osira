@@ -24,8 +24,14 @@
                     padding: 0rem 0rem 2rem;
                 }
 
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     color: $greenbg;
+                }
+
+                &[data-disabled] {
+                    opacity: 0.4;
+                    pointer-events: none;
                 }
             }
         }

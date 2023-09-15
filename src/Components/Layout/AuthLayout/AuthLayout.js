@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from '../../Common/Header/Header'
+import Footer from '../../Common/Footer/Footer'
 
 const AuthLayout = ({ className, showHeader }) => {
     return (
@@ -10,6 +11,7 @@ const AuthLayout = ({ className, showHeader }) => {
             } */}
             <Header />
             <Outlet />
+            <Footer/>
         </main>
     )
 }

@@ -1,25 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import HeadingText from '../../Common/HeadingText/HeadingText'
-import './HowitWork.scss'
 import icon1 from '../../../Assets/Images/works-img1.png'
 import icon2 from '../../../Assets/Images/works-img2.svg'
 import icon3 from '../../../Assets/Images/works-img3.svg'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import HeadingText from '../../Common/HeadingText/HeadingText'
+import './HowitWork.scss'
 
 const HowitWork = () => {
-  useEffect(() => {
-    AOS.init({
-        duration: 1500,
-        easing: 'linear-ease',
-    });
-}, [])
-
-
   const works = [
     {
-      
+
       icon: icon1,
       heading: "Sign up",
       para: "Anyone with internet access will be able to register.Users can register as individuals or organizations, and must first complete a know-your-customer (KYC) or know-your-business (KNB) process before they can use the platform."
@@ -45,7 +35,7 @@ const HowitWork = () => {
               {works.map((data) => {
                 return (
                   <Col md={6} lg={4} xl={4}>
-                    <div className='howwork_sec_inner_box_card' data-aos="fade-down"data-aos-easing="linear" data-aos-duration="1500">
+                    <div className='howwork_sec_inner_box_card' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
                       <img src={data.icon} alt="icon" />
                       <h5>{data.heading}</h5>
                       <p>{data.para}</p>
@@ -54,7 +44,7 @@ const HowitWork = () => {
                 )
               })}
             </Row>
-            <div className='howwork_sec_inner_box_card card2'>
+            <div className='howwork_sec_inner_box_card card2' data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
               <img src={icon1} alt="icon" />
               <h5>Provide expertise</h5>
               <p>Individuals and representatives of institutions with expertise in critical topics such as climate science, ESG finance, environment law, international development or indigenous communities can be appointed to the Osira Protocol Committee.

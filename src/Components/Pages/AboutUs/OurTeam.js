@@ -1,16 +1,16 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import HeadingText from '../../Common/HeadingText/HeadingText'
-import './AboutUs.scss'
 import team_img from '../../../Assets/Images/team-img1.png'
 import team_img2 from '../../../Assets/Images/team-img2.png'
+import HeadingText from '../../Common/HeadingText/HeadingText'
+import './AboutUs.scss'
 
 const OurTeam = () => {
     return (
         <div className='team_sec'>
             <HeadingText heading="Our Team" />
             <Row className='team_inner'>
-                <Col xl={6}>
+                <Col md={6} xl={6} data-aos="fade-down">
                     <div className='team_box'>
                         <img src={team_img} alt="team-img" />
                         <h6>Peter Batt </h6>
@@ -20,7 +20,7 @@ const OurTeam = () => {
                         </p>
                     </div>
                 </Col>
-                <Col xl={6}>
+                <Col md={6} xl={6} data-aos="fade-down">
                     <div className='team_box team_box2'>
                         <img src={team_img2} alt="team-img" />
                         <h6>Peter Batt </h6>

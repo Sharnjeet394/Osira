@@ -7,6 +7,12 @@
         height: calc(100vh - 124px);
         padding-top: 42% !important;
 
+        @media (max-width: 1479px) {
+            .video-react-poster {
+                background-size: cover;
+            }
+        }
+
         @media (max-width:767px) {
             height: 300px;
         }
