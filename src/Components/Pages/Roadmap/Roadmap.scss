@@ -204,6 +204,10 @@
         top: 14rem;
         transform: translateX(-50%);
       }
+
+      @media (max-width: 384px) {
+        top: 16.65rem;
+      }
     }
 
     .slick-track {
@@ -308,6 +312,11 @@
               &::after {
                 background-image: url(../../../Assets/svgs/black-line.svg);
               }
+
+              &::before {
+                background-color: #1B3741;
+              }
+
             }
           }
 
@@ -318,6 +327,11 @@
               &::after {
                 background-image: url(../../../Assets/svgs/yellow-line.svg);
               }
+
+              &::before {
+                background-color: #E2BD4B;
+              }
+
             }
           }
         }
@@ -339,6 +353,11 @@
                   left: 50%;
                   background-position: bottom;
                   transform: translateX(-50%);
+                }
+
+                &::before {
+                  bottom: unset;
+                  top: 100%;
                 }
               }
             }

@@ -9,6 +9,10 @@
 
     @media (max-width:991px) {
         padding: 1rem 0;
+
+        .join_btn {
+            width: 100%;
+        }
     }
 
     .navbar {
@@ -70,34 +74,59 @@
         }
     }
 
-    .searchBar {
-        margin-left: 3.6rem;
-    }
-
     .navbar-toggler {
-        background-color: $greenbg;
-        border: 0;
-        margin-left: 15px;
-        transition: all ease-in-out 0.3s;
+        box-shadow: none;
+        padding: 0;
+        border: none !important;
+        background-color: transparent;
+
+        span {
+            display: block;
+            height: 0.3rem;
+            transition: 200ms ease-in-out;
+            transform-origin: left;
+            background-color: $white;
+            width: 2.8rem;
+            border-radius: 2rem;
+
+            &:not(:last-child) {
+                margin-bottom: 0.7rem;
+            }
+        }
 
         &:focus {
             box-shadow: none;
         }
 
         &:hover {
-            background-color: $hoverbg;
+            background-color: transparent;
         }
 
-        .navbar-toggler-icon {
-            filter: brightness(0) invert(1);
-            width: 3rem;
-            height: 3rem;
+        &:not(.collapsed) {
+            span {
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
         }
     }
 }
 
 .searchBar {
     position: relative;
+    margin-left: 3.6rem;
+
+    @media (max-width: 991px) {
+        margin: 1rem 0 0;
+    }
 
     .SearchIcon {
         width: 5rem;
@@ -112,6 +141,10 @@
 
         @media (max-width:991px) {
             width: 4rem;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
             height: 4rem;
         }
 
@@ -135,6 +168,13 @@
         &:focus {
             box-shadow: none;
             outline: 0;
+        }
+
+        @media (max-width:991px) {
+            padding-right: 4rem;
+            display: block;
+            position: static;
+            max-width: 100%;
         }
     }
 

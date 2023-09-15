@@ -1,9 +1,9 @@
 import React from 'react'
-import "./Footer.scss"
 import { Col, Container, Row } from 'react-bootstrap'
-import footerlogo from "../../../Assets/Images/logo.svg"
 import { Link, NavLink } from 'react-router-dom'
-import { DiscordIcon, InstagramIcon, LinkedinIcon, TwitterIcon } from '../../../Assets/svgs/svg'
+import footerlogo from "../../../Assets/Images/logo.svg"
+import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from '../../../Assets/svgs/svg'
+import "./Footer.scss"
 
 const Footer = () => {
   return (
@@ -41,10 +41,12 @@ const Footer = () => {
                 <div className='footersocialLink'>
                   <h4>Join our community</h4>
                   <div className='d-flex flex-wrap'>
-                    <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FOsiraNetwork" target='_blank'><TwitterIcon /></Link>
-                    <Link to="#" target='_blank'><LinkedinIcon /></Link>
-                    <Link to="https://www.instagram.com/osira.network/" target='_blank'><InstagramIcon /></Link>
-                    <Link to="#" target='_blank'><DiscordIcon /></Link>
+                    <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FOsiraNetwork" target='_blank' rel="noreferrer"><TwitterIcon /></Link>
+                    <Link to="https://www.instagram.com/osira.network/" target='_blank' rel="noreferrer"><InstagramIcon /></Link>
+                    <Link to="https://www.facebook.com/osiranetwork" target="_blank" rel="noreferrer"><FacebookIcon /></Link>
+                    <Link to="https://www.youtube.com/channel/UCmOr_ECBqhEUSkgxTtUCblg" target="_blank" rel="noreferrer"><YoutubeIcon /></Link>
+                    {/* <Link to="#" target='_blank'><LinkedinIcon /></Link> */}
+                    {/* <Link to="#" target='_blank'><DiscordIcon /></Link> */}
                   </div>
                 </div>
               </Col>

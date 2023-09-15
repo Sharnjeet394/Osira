@@ -33,8 +33,8 @@ const Roadmap = () => {
     };
     return (
         <section className='roadmap_sec'>
-            <HeadingText heading="Roadmap" info="Mapping the Journey Osira roadmap to save climate through web3" />
             <Container>
+                <HeadingText heading="Roadmap" info="Mapping the Journey Osira roadmap to save climate through web3" />
                 <div className='roadmap_slider'>
                     <div className='roadmap_area'>
                         <Slider {...settings}>

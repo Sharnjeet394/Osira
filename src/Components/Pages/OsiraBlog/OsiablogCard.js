@@ -45,7 +45,7 @@ const OsiablogCard = () => {
                                     </div>
                                     <div className='blog_content'>
                                         <h5>{item.title}</h5>
-                                        <p>{item.info}<Link to="/">Read More</Link></p>
+                                        <p>{item.info}<Link target="_blank" rel="noreferrer" to={item.to}>Read More</Link></p>
                                         <h6>{item.time}</h6>
                                     </div>
                                 </div>

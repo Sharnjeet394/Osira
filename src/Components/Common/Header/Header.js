@@ -32,14 +32,18 @@ const Header = () => {
                 <NavLink onClick={handleSidebarClick} to="/about-us">About us</NavLink>
                 <Link onClick={handleSidebarClick} to="#" data-disabled="true">Whitepaper</Link>
               </Nav>
-              <CommonButton disabled title="Join Community" icon={icon} btnicon="d-block" className="ms-lg-3" />
-            </Navbar.Collapse>
-            <div className='headerRight d-flex align-items-center'>
+              <CommonButton disabled title="Join Community" icon={icon} btnicon="d-block" className="join_btn ms-lg-3" />
               <div className={isActive ? 'searchBar opensearch' : "searchBar"}>
                 <span onClick={toggleClass} className='SearchIcon'><SearchIcon /></span>
                 <input className='searchInput' type="text" id="" name="" placeholder="Search....... " />
               </div>
-              <Navbar.Toggle ref={toggler} aria-controls="basic-navbar-nav" />
+            </Navbar.Collapse>
+            <div className='headerRight d-flex align-items-center'>
+              <Navbar.Toggle ref={toggler} aria-controls="basic-navbar-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+              </Navbar.Toggle>
             </div>
           </Container>
         </Navbar>
