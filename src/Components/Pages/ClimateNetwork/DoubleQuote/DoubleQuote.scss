@@ -78,6 +78,8 @@
 @media screen and (max-width: 767px) {
     .Double_quote {
         margin-top: 4rem;
+        padding: 5rem 3rem 5rem 3rem;
+        background-size: 65px;
 
         h5 {
             font-size: 1.8rem;
@@ -98,11 +100,10 @@
 
 @media screen and (max-width: 575px) {
     .Double_quote {
-        padding: 10rem 3rem 10rem 3rem;
 
         h5 {
             font-size: 1.6rem;
-            line-height: 3rem;
+            line-height: 2.5rem;
             margin: 2rem 0 2.8rem;
         }
 
@@ -113,6 +114,8 @@
         p {
             font-size: 1.4rem;
             margin-top: 0.4rem;
+            line-height: 2rem;
+
         }
     }
 }
@@ -160,7 +163,8 @@
         margin: 0 auto;
 
         @media (max-width: 767px) {
-            font-size: 1.2rem !important;
+            font-size: 1.4rem !important;
+            font-weight: 500;
         }
     }
 }

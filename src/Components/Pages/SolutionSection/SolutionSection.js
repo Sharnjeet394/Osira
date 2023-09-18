@@ -8,7 +8,7 @@ function SolutionSection() {
             <section className="SolutionSection">
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg={6}>
+                        <Col lg={5} md={12}>
                             <div className="Problem_content">
                                 <h3 data-aos="fade-up" data-aos-duration="350">The solution</h3>
                                 <p data-aos="fade-up" data-aos-duration="400">The climate and sustainable finance markets are currently worth around $3.6trn a year,and are primed for exponential long-term growth.</p>
